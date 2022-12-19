@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    overflow: scroll;
+  }
+  
+  .header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header1 {
+    background-color: rgb(244, 241, 241);
+    color: rgb(7, 0, 0);
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  .footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  main {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  
+  table, th, td {
+    border:10px solid rgb(244, 241, 241);
+  }
+  
+  .dropbtn {
+    
+    background-color: #010101;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #d73a3a;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #f0d2d2;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .show {display:block;}
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+button {
+  background: none;
+border: none;
+}
+button:hover {
+ background-color: none;
+}
+button {
+ color: black;
+font-size: 15px;
+ 
+}   
+p {
+ color: black;
+font-size: 15px;
+
+}   
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1.00;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+  background-image: url("ayam.jpg");
+  min-height: 700px;
+}
+
+.bgimg-2 {
+  background-image: url("backimg1.png");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("backimg2.png");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;   
+  width: 100%;
+  text-align: center;
+
+}
+
+.caption span.border {
+  background-color: rgb(15, 15, 15);
+  color: #fff;
+  padding: 20px;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+

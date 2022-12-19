@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+   <style>
+
+ body{  background-image: url("reservation.jpg");}
+  
+   </style> 
+
+ 
+ <div class="header">
+  <header>
+    <p></p>
+    <div class="dropdown">
+      <button id="myBtn" class="dropbtn">MENU</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menus</a>
+      
+        <a href="location.html">Location</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    </header>
+  </div>
+
+
+
+<main>
+
+
+
+
+
+  <div class="header1">
+            <h1>R E S E R V A T I O N S</h1>
+            <form id="myform" onsubmit="myFunction1()">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name"><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email"><br>
+              <label for="phone">Phone:</label><br>
+              <input type="tel" id="phone" name="phone"><br>
+              <label for="date">Date:</label><br>
+              <input type="date" id="date" name="date"><br>
+              <label for="time">Time:</label><br>
+              <input type="time" id="time" name="time"><br>
+              <label for="party-size">Number of Guests:</label><br>
+              <input type="number" id="party-size" name="party-size"><br><br>
+              <input type="submit" value="Submit">
+
+          </form>
+          <p></p>
+           </div>
+            
+          
+
+
+          
+        </main>
+
+        
+       <script>
+
+
+
+          document.getElementById("myBtn").onclick = function() {myFunction()};
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+        function myFunction1() {
+
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+                var date = document.getElementById('date').value;
+                var time = document.getElementById('time').value;
+                var party_size = document.getElementById('party-size').value;
+                
+                var receiptHTML = '<h1>Receipt</h1>';
+                receiptHTML += '<p>Name: ' + name + '</p>';
+                receiptHTML += '<p>Email: ' + email + '</p>';
+                receiptHTML += '<pPhone: ' + phone + '</p>';
+                receiptHTML += '<p>Date: ' + date + '</p>';
+                receiptHTML += '<p>Time: ' + time + '</p>';
+                receiptHTML += '<p>No of Guests: ' + party_size + '</p>';
+             
+                var receiptWindow = window.open('', 'Receipt', 'height=500,width=500');
+                receiptWindow.document.write(receiptHTML);
+
+                 //receiptWindow.print();--!>
+            }
+            </script>
+        
+    </body>
+   
+    </html>
+    
